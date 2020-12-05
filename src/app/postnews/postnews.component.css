@@ -1,0 +1,90 @@
+
+.form-group{
+  margin-top: 0px;
+}
+.card{
+  margin-top: 2%;
+  /* height: -370px; */
+  margin-right: 15%;
+  padding-left: 50px;
+  margin-left: 50px;
+  padding-right: 50px;
+size: 100px;
+border-radius: 25px;
+background-color: lavender;
+
+-webkit-box-shadow: -16px 17px 13px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -16px 17px 13px -1px rgba(0,0,0,0.75);
+box-shadow: -16px 17px 13px -1px rgba(0,0,0,0.75);
+}
+.card button{
+  border-radius: 35px;
+  font-size: 32px;
+  margin-top: 35px;
+}
+
+.card label{
+padding-top: 5px;
+}
+
+.card .form-control{
+  font-size: 25px;
+  width: 800px;
+}
+
+
+.a{
+  background-size: 100%;
+  background-size: inherit; 
+   width: 100%;
+  background-size: cover;
+  background-image: url("../../assets/sky-828648.jpg"); 
+  height: 100vh;
+ 
+ } 
+ 
+.footer {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(106, 142, 196, 0.445);
+  color: white;
+  text-align: center;
+height: 30%;
+font-size: 40px;
+margin-top: auto;
+
+}
+.footer  b{
+  font-size: 40px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 80px;
+  width: 50px;
+  /* text-align: center; */
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+.footerleft h1{
+padding-left: 100px;
+margin-left: 50px;
+text-align: left;
+font-size: 40px;
+padding-top: 2px;
+} 
+
+.footer h1{
+  text-align: initial;
+}
+.symbols a{
+  font-size: 50px;
+}
+.discord{
+  margin-top: -890px;
+  padding-top: 450px;
+}

@@ -1,0 +1,42 @@
+
+.sidenav{
+background-color: rgba(128, 128, 128, 0.527);
+width: 550px;
+height: 1300px;
+/* position: relative; */
+
+}
+
+.container-fluid{
+  float: left;
+  height: 100%;
+}
+
+.nav-item{
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 35px;
+  color: rgba(6, 28, 32, 0.007);
+  box-shadow: floralwhite;
+  
+  
+}
+
+.navbar{
+  height: 130px;
+}
+
+.navbar img{
+  height: 10%;
+  padding-right: 25%;
+}
+  
+.a{
+  background-size: 100%;
+  /* background-size: inherit; */
+  width: 100%;
+  background-size: cover;
+  background-image: url("../../assets/sky-828648.jpg"); 
+  height: 100vh;
+ 
+ }

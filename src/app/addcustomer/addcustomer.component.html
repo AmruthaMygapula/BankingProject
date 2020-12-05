@@ -1,0 +1,68 @@
+
+   
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>   
+<div class="a">
+
+  <div class="row ">
+  <div class="col-md-1"></div>
+
+
+    <div class="card discord">
+
+<div class=" discord" >
+
+ 
+  <form  #regForm="ngForm" (ngSubmit)="onSubmit()">
+   
+    <div class="row"  >
+        <div class="col-md-5">
+            <label for="firstname" class="font-weight-bold">First Name:</label>
+            <input type="text"class="form-control"  id="firstname" name="firstname" [(ngModel)]="customer.firstname" #firstname="ngModel" ngModel required>
+        <div style="color: rgba(255, 0, 0, 0.623);" *ngIf="firstname.touched && firstname.value!='' && firstname.valid">Firstname is required</div>
+            <label   for="lastname"  class="font-weight-bold">Last Name:</label>
+        <input type="text"class="form-control"   id="lastname"  name="lastname" [(ngModel)]="customer.lastname" #lastname="ngModel" ngModel required>
+        <label  for="openingbalance" class="font-weight-bold" >Opening Balance:</label>
+        <input type="text"class="form-control" id="openingbalance" name="openingbalance"  [(ngModel)]="customer.openingbalance" #openingbalance="ngModel" ngModel required>
+        <label class="font-weight-bold"   for="gender">Gender:</label>
+        <input type="text"class="form-control"  id="gender" name="gender" [(ngModel)]="customer.gender" #gender="ngModel" ngModel required>
+        <label class="font-weight-bold"  for="dob">Date of Birth:</label>
+        <input type="date"class="form-control" id="dob" name="dob" [(ngModel)]="customer.dob" #dob="ngModel" ngModel required>
+        <label class="font-weight-bold"   for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="customer.password" #password="ngModel" ngModel required>
+        <label class="font-weight-bold"  for="accountno">accountno:</label>
+        <input type="text" class="form-control" id="accountno" name="accountno" [(ngModel)]="customer.accountno" #accountno="ngModel" ngModel required>
+</div>
+<div class="col-md-1">
+
+</div>
+<div class="col-md-5">
+    
+<label class="font-weight-bold"  for="aadaharno">Aadhar No:</label>
+<input type="text"class="form-control" id="aadaharno" name="aadaharno"  [(ngModel)]="customer.aadaharno" #aadaharno="ngModel" ngModel required>
+<label class="font-weight-bold"  for="address" >Address:</label>
+<input type="text"class="form-control" id="address"  name="address" [(ngModel)]="customer.address" #address="ngModel" ngModel required>
+<label class="font-weight-bold"   for="bankbranch">Bank Branch:</label>
+<input type="text"class="form-control" id="bankbranch" name="bankbranch" [(ngModel)]="customer.bankbranch" #bankbranch="ngModel" ngModel required>
+<label class="font-weight-bold"  for="pin">PIN(4 digit):</label>
+<input type="text"class="form-control" id="pin" name="pin" [(ngModel)]="customer.pin" #pin="ngModel" ngModel required>
+<div style="color: rgba(255, 0, 0, 0.582);" *ngIf="pin.touched && pin.value!='' && pin.valid && pin.value.length<4 && pin.value.length>4">Should be 4 characters</div>
+<label class="font-weight-bold"   for="username">Username:</label>
+<input type="text"class="form-control"  id="username" name="username" [(ngModel)]="customer.username" #username="ngModel" ngModel required>
+<label class="font-weight-bold"   for="emailid" >Email:</label>
+<input type="email" class="form-control" id="emailid" name="emailid" [(ngModel)]="customer.emailid" #emailid="ngModel" ngModel required >
+
+</div>
+<button type="submit" class="btn btn-success btn-lg mr-5" width=5px >Submit</button>
+<button type="reset" class="btn btn-primary btn-lg " > Reset</button>
+
+</div>
+
+</form> 
+
+</div>
+</div>
+</div>
+</div>

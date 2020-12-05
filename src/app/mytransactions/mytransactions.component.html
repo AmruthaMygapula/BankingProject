@@ -1,0 +1,113 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<div class="a">
+
+  <!-- <div class="container-fluid"> -->
+    
+
+  <div class="row ">
+  <div class="col-md-3"></div>
+
+<div class="col-md-8 " style="width: 25rem;">
+
+
+  
+  <table class="table table-hover discord">
+    <thead>
+      <tr  style="background-color: rgba(197, 209, 209, 0.192);color: ghostwhite;">
+        <th scope="col">Trans.ID</th>
+        <th scope="col">Date & Time(IST)</th>
+        <th scope="col">Remarks</th>
+        <th scope="col">Debit(INR)</th>
+        <th scope="col">Credit(INR)</th>
+        <th scope="col">Balance(INR)</th>
+      </tr>
+    </thead>
+    <tbody style="background-color: rgba(163, 152, 152, 0.24);color: ghostwhite; ">
+      <tr  *ngFor="let trans of transactions |filter:search">
+        <!-- <th scope="row">{{benef.benfId}}</th> -->
+        <td>{{trans.transId}}</td>
+        <td>{{trans.date}}</td>
+        <td>{{trans.remarks}}</td>
+        <td>{{trans.debit}}</td>
+        <td>{{trans.credit}}</td>
+        <td>{{trans.balance}}</td>
+       
+      
+      </tr>
+    </tbody>
+    
+  </table>
+  
+
+</div>
+</div>
+<!-- </div> -->
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+
+   <div class="footerleft">
+  <h3>Disclaimer</h3>
+  <br>
+  <h3>Privacy Policy</h3>
+  <br>
+  <h3>Code of Commitment</h3>
+  <br>
+  <h3>Responsible Disclosure Policy</h3>
+  
+  </div>
+</div>
+  <div class="col-md-3">
+  <h1  style="font-size:30px ;padding-top: 20px;">  
+    <a href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110">
+  RBI:Beware of Fictitious Offers/Lottery Winnings/Cheap Fund Offers 
+</a>
+<br><br>
+Please do not believe any entity using Axis Bank logos & branding to request the public for money in exchange for opening a Customer Service Point.
+<br><br>
+<h3>Copyright © 2020Axis Bank</h3>
+</h1>
+
+</div>
+    <div class="col-md-3">
+  <div class="footercomm">
+  <b>
+    Connect with Community
+  </b>
+    <br>
+    <div class="symbols">
+    <a href="https://www.instagram.com/" class="fa fa-instagram" ></a><br>
+    <a href="https://www.instagram.com/" class="fa fa-youtube"></a><br>
+    <a href="https://www.facebook.com/axisbank/" class="fa fa-facebook"></a><br>
+     <a href="http://www.twitter.com/" class="fa fa-twitter"></a>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    
+    About Us:
+    
+Call: 1800-419-5959
+SMS BAL to 56161600 or +918691000002
+to get your Account Balance
+<br>
+Call: 1800-419-6969
+SMS MINI to 56161600 or +918691000002
+to get your Mini Statement
+ 
+</div>
+</div>
+</div>
+</div>
+
+

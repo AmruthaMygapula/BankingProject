@@ -1,0 +1,62 @@
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="a">
+
+  <div class="search-box">
+    <input class="search-txt" type="text" name="" placeholder="Search Beneficiaries" [(ngModel)]="search">
+    <button type="submit" style="border-radius: 50%;background-color: rgb(75, 69, 69);"><i class="fa fa-search" style="font-size: 60px;background-color: rgb(75, 69, 69);color: silver;"></i></button>
+    <button type="button" routerLink="/beneficiary" class="btn btn-secondary btn-lg float-right" style="margin-top: 1px; font-size: 50px;margin-right: 900px;" > Add</button>
+
+  </div>
+
+</div>
+
+    
+
+  <div class="row ">
+  <div class="col-md-3"></div>
+
+<div class="col-md-8 " style="width: 25rem;">
+
+
+  <table class="table table-hover discord">
+    <thead>
+      <tr style="background-color: rgba(197, 209, 209, 0.192);color: ghostwhite;">
+        <!-- <th scope="col">Benf.ID</th> -->
+        <th scope="col">Firstname</th>
+        <th scope="col">Lastname</th>
+        <th scope="col">Accountno</th>
+        <th scope="col">EmailId</th>
+        <th scope="col">PhoneNo</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    
+    <tbody style="background-color: rgba(163, 152, 152, 0.24);color: ghostwhite; ">
+      <tr  *ngFor="let benef of beneficiaries |filter:search">
+        <!-- <th scope="row">{{benef.benfId}}</th> -->
+        <td>{{benef.firstname}}</td>
+        <td>{{benef.lastname}}</td>
+        <td>{{benef.accountno}}</td>
+        <td>{{benef.emailId}}</td>
+        <td>{{benef.phoneNo}}</td>
+        <td><i (click)="deletebenef(benef.accountno)" class="fa fa-trash-o" style="margin-left: 10px ;font-size: 50px;color: ghostwhite;">
+       &nbsp;   <i (click)="directTotransfer(benef.accountno)" class="material-icons" style="font-size:36px">send</i>
+
+        </i></td>
+      
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+</div>
+
+
+
+
